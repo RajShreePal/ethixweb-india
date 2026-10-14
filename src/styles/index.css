@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme {
+  --color-ink: #0c0d10;          /* verified theme colour from ethixweb.com */
+  --color-accent: #c62828;       /* TEMPORARY red: replace with the official brand red */
+  --color-paper: #faf8f4;
+  --color-sand: #f0ece4;
+  --color-muted: #5b5d63;
+  --font-display: Georgia, "Times New Roman", serif;
+}
+body { background: var(--color-paper); color: var(--color-ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
